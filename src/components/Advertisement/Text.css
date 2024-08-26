@@ -1,0 +1,40 @@
+.text-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.text-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #c43d3d;
+    height: 30px;
+    width: 50px;
+}
+
+.text-table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.text-row {
+    display: table-row;
+}
+
+.text-cell {
+    display: table-cell;
+    padding: 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+}
+
+.text-cell:first-child {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}

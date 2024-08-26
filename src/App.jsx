@@ -7,10 +7,10 @@ function App() {
     const { register, watch } = useForm();
     const formData = watch();
     return (
-        <>
-            <Form register={register} formData={formData} />
-            <Advertisement formData={formData} />
-        </>
+        <div className="app-all">
+            <Form register={register} formData={formData} className="form" />
+            <Advertisement formData={formData} className="advertisement" />
+        </div>
     );
 }
 

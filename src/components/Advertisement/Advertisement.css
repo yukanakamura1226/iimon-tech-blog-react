@@ -1,0 +1,7 @@
+.advertisement {
+  width: 1000px;
+  height: 700px;
+  padding: 30px;
+  background-color: rgb(240, 255, 243);
+  border: 2px solid #ccc;
+}
