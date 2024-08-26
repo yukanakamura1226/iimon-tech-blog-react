@@ -11,8 +11,8 @@ function Pictures({ formData }) {
 
     return (
         <div className="pictures-container">
-            {createImageURL(formData.imageExterior) && (
-                <div className="image-row">
+            <div className="image-row">
+                {createImageURL(formData.imageExterior) && (
                     <div className="image-item">
                         <p>外装</p>
                         <img
@@ -20,6 +20,8 @@ function Pictures({ formData }) {
                             alt="外装画像"
                         />
                     </div>
+                )}
+                {createImageURL(formData.imageInterior) && (
                     <div className="image-item">
                         <p>内装</p>
                         <img
@@ -27,6 +29,8 @@ function Pictures({ formData }) {
                             alt="内装画像"
                         />
                     </div>
+                )}
+                {createImageURL(formData.imageMap) && (
                     <div className="image-item">
                         <p>間取り</p>
                         <img
@@ -34,8 +38,8 @@ function Pictures({ formData }) {
                             alt="間取り画像"
                         />
                     </div>
-                </div>
-            )}
+                )}
+            </div>
         </div>
     );
 }
