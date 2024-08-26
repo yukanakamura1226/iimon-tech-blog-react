@@ -1,21 +1,3 @@
-// /* eslint-disable react/prop-types */
-// import './Text.css'; 
-
-// function Text({ formData }) {
-//     return (
-//         <div className="text-container">
-//             <h2 className="text-title">不動産広告</h2>
-//             <p className="text-item">物件名: {formData.name}</p>
-//             <p className="text-item">住所: {formData.address}</p>
-//             <p className="text-item">価格: {formData.price}</p>
-//             <p className="text-item">物件の種類: {formData.propertyType}</p>
-//             <p className="text-item">面積: {formData.area} ㎡</p>
-//         </div>
-//     );
-// }
-
-// export default Text;
-
 /* eslint-disable react/prop-types */
 import './Text.css'; 
 
@@ -24,7 +6,7 @@ function Text({ formData }) {
         <div className="text-container">
             <header>
                 <h2 className="text-title">{formData.name}</h2>
-                <p>住所:{formData.address}</p>
+                <p>{formData.address}</p>
             </header>
             <div className="text-table">
                 <div className="text-row">

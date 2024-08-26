@@ -1,4 +1,3 @@
-// import React from "react";
 import "./Form.css"
 // eslint-disable-next-line react/prop-types
 function Form({ register }) {
@@ -17,7 +16,7 @@ function Form({ register }) {
                 <input id="price" type="number" {...register("price")} />
             </div>
             <div>
-                <label htmlFor="price">交通</label>
+                <label htmlFor="price">交通(駅徒歩)</label>
                 <input id="walkTime" type="number" {...register("walkTime")} />
             </div>
             <div>
