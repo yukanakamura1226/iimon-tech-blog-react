@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+import "./Pictures.css";
+
 function Pictures({ formData }) {
     const createImageURL = (file) => {
         if (file && file[0] instanceof File) {
@@ -8,31 +10,30 @@ function Pictures({ formData }) {
     };
 
     return (
-        <div>
-            <h3>画像</h3>
+        <div className="pictures-container">
             {createImageURL(formData.imageExterior) && (
-                <div>
-                    <p>
-                        外装画像:{" "}
+                <div className="image-row">
+                    <div className="image-item">
+                        <p>外装</p>
                         <img
                             src={createImageURL(formData.imageExterior)}
                             alt="外装画像"
                         />
-                    </p>
-                    <p>
-                        内装画像:{" "}
+                    </div>
+                    <div className="image-item">
+                        <p>内装</p>
                         <img
                             src={createImageURL(formData.imageInterior)}
                             alt="内装画像"
                         />
-                    </p>
-                    <p>
-                        間取り画像:{" "}
+                    </div>
+                    <div className="image-item">
+                        <p>間取り</p>
                         <img
                             src={createImageURL(formData.imageMap)}
                             alt="間取り画像"
                         />
-                    </p>
+                    </div>
                 </div>
             )}
         </div>

@@ -11,7 +11,7 @@ function Text({ formData }) {
             <div className="text-table">
                 <div className="text-row">
                     <div className="text-cell">価格</div>
-                    <div className="text-cell">{formData.price}円</div>
+                    <div className="text-cell">{formData.price} 円</div>
                 </div>
                 <div className="text-row">
                     <div className="text-cell">交通</div>
